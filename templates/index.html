@@ -2,11 +2,9 @@
 <html >
   <head>
     <meta charset="UTF-8">
-    <title>Direct Messaging</title>
-
+    <title>Bot-Messenger</title>
 
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/reset.css') }}">
-
 
         <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
 
@@ -48,7 +46,19 @@
                     <span class="preview">Hey!</span>
                 </li>
             </ul>
+          <br><br>
+          <span class="bots-heading">Bots:</span>
+          <ul class="bots">
+              <li class="person" data-chat="bot1">
+                  <img src="{{ url_for('static', filename='styles/images/usman.png') }}" alt="" />
+                  <span class="name">Knowledge Bot</span>
+                  <span class="time">2:09 PM</span><br>
+                  <span class="preview">Ask me anything!</span>
+              </li>
+
+          </ul>
         </div>
+
         <div class="right">
             <div class="top">
               <span><span class="name"></span></span><br>
@@ -117,64 +127,22 @@
                     Now back to work!
                 </div>
             </div>
-            <div class="chat" data-chat="person4">
-                <div class="conversation-start">
-                    <span>Yesterday, 4:20 PM</span>
-                </div>
-                <div class="bubble me">
-                    Hey human!
-                </div>
-                <div class="bubble me">
-                    Umm... Someone took a shit in the hallway.
-                </div>
-                <div class="bubble you">
-                    ... what.
-                </div>
-                <div class="bubble you">
-                    Are you serious?
-                </div>
-                <div class="bubble me">
-                    I mean...
-                </div>
-                <div class="bubble me">
-                    It’s not that bad...
-                </div>
-            </div>
-            <div class="chat" data-chat="person5">
-                <div class="conversation-start">
-                    <span>Today, 6:28 AM</span>
-                </div>
-                <div class="bubble you">
-                    Wasup
-                </div>
-                <div class="bubble you">
-                    Wasup
-                </div>
-                <div class="bubble you">
-                    Wasup for the third time like is <br />you bling bitch
-                </div>
 
-            </div>
-            <div class="chat" data-chat="person6">
-                <div class="conversation-start">
-                    <span>Monday, 1:27 PM</span>
+            <div class="chat" data-chat="bot1">
+                <!--<div class="conversation-start">
+                    <span>Today, 6:48 AM</span>
+                </div> -->
+                <div class="bubble you">
+                    Hello!
                 </div>
                 <div class="bubble you">
-                    So, how's your new phone?
-                </div>
-                <div class="bubble you">
-                    You finally have a smartphone :D
+                    When was Google created?
                 </div>
                 <div class="bubble me">
-                    Drake?
-                </div>
-                <div class="bubble me">
-                    Why aren't you answering?
-                </div>
-                <div class="bubble you">
-                    howdoyoudoaspace
+                    1998.
                 </div>
             </div>
+
             <div class="write">
                 <a href="javascript:;" class="write-link attach"></a>
                 <input type="text" />

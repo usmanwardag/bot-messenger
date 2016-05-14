@@ -156,6 +156,104 @@ body {
 .container .left .people .person.active:after, .container .left .people .person:hover:after {
   display: none;
 }
+
+.container .left .bots-heading{
+
+  font-family: Lato-Heavy;
+  font-size: 20px;
+  padding-top: 30px;
+  padding-left: 3%;
+}
+
+.container .left .bots {
+  margin-left: -1px;
+  border-right: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
+  padding-top: 10px;
+  width: -moz-calc(100% + 2px);
+  width: -webkit-calc(100% + 2px);
+  width: -o-calc(100% + 2px);
+  width: calc(100% + 2px);
+}
+.container .left .bots .person {
+  position: relative;
+  width: 100%;
+  padding: 12px 3% 16px;
+  cursor: pointer;
+  background-color: #fff;
+}
+.container .left .bots .person:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  width: 80%;
+  height: 1px;
+  background-color: #e6e6e6;
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+.container .left .bots .person img {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-right: 12px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.container .left .bots .person .name {
+  font-size: 16px;
+  line-height: 22px;
+  color: #1a1a1a;
+  font-family: 'Lato-Regular';
+  font-weight: 450;
+}
+.container .left .bots .person .time {
+  font-size: 14px;
+  position: absolute;
+  top: 16px;
+  right: 10%;
+  padding: 0 0 5px 5px;
+  color: #999;
+  font-family: 'Lato-Light';
+  background-color: #fff;
+}
+.container .left .bots .person .preview {
+  font-size: 14px;
+  padding-top: 7px;
+  display: inline-block;
+  overflow: hidden !important;
+  width: 70%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: 'Lato-Regular';
+  color: #999;
+}
+.container .left .bots .person.active, .container .left .bots .person:hover {
+  margin-top: -1px;
+  margin-left: -1px;
+  padding-top: 13px;
+  border: 0;
+  background-color: #54759E;
+  width: -moz-calc(100% + 2px);
+  width: -webkit-calc(100% + 2px);
+  width: -o-calc(100% + 2px);
+  width: calc(100% + 2px);
+
+}
+.container .left .bots .person.active span, .container .left .bots .person:hover span {
+  color: #fff;
+  background: transparent;
+}
+.container .left .bots .person.active:after, .container .left .bots .person:hover:after {
+  display: none;
+}
+
+
+
 .container .right {
   position: relative;
   float: left;
