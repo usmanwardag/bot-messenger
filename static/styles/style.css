@@ -280,7 +280,7 @@ body {
 .container .right .chat {
   position: relative;
   display: none;
-  background-image: url('images/bg.png');
+  background-image: url('images/bg.jpg');
   overflow: hidden;
   padding: 0 35px 92px;
   border-width: 0px 0px 0px 0px;

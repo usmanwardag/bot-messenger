@@ -6,11 +6,11 @@ app.debug = True
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('start.html')
 
 @app.route('/chat')
-def guess(id):
-    return render_template('chat.html', guess=guesses[id])
+def guess():
+    return render_template('chat.html')
 
 if __name__ == '__main__':
     app.run()
