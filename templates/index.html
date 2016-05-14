@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Direct Messaging</title>
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/reset.css') }}">
+
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+
+
+
+
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+    <div class="container">
+        <div class="left">
+            <div class="top">
+              <img class = "profile" src = "{{ url_for('static', filename='styles/images/usman.png') }}" alt="" />
+              <br><span class="name">Usman Mahmood</span>
+              <img class = "online" src = "{{ url_for('static', filename='styles/images/online.png') }}" alt="" /><br><br>
+              <span class="text">Online: 5/41</span><br>
+              <span class="text">Unread: 10</span><br>
+
+            </div>
+            <ul class="people">
+                <li class="person" data-chat="person1">
+                    <img src="{{ url_for('static', filename='styles/images/usman.png') }}" alt="" />
+                    <span class="name">Usman Mahmood</span>
+                    <span class="time">2:09 PM</span><br>
+                    <span class="preview">Hello!</span>
+                </li>
+                <li class="person" data-chat="person2">
+                    <img src="{{ url_for('static', filename='styles/images/usman.png') }}" alt="" />
+                    <span class="name">Saad Qureshi</span>
+                    <span class="time">1:44 PM</span><br>
+                    <span class="preview">Are you there?</span>
+                </li>
+                <li class="person" data-chat="person3">
+                    <img src="{{ url_for('static', filename='styles/images/usman.png') }}" alt="" />
+                    <span class="name">Muddassir Ahmed</span>
+                    <span class="time">2:09 PM</span><br>
+                    <span class="preview">Hey!</span>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="top">
+              <span><span class="name"></span></span><br>
+            </div>
+
+            <div class="chat" data-chat="person1">
+                <!--<div class="conversation-start">
+                    <span>Today, 6:48 AM</span>
+                </div> -->
+                <div class="bubble you">
+                    Hello!
+                </div>
+                <div class="bubble you">
+                    it's me.
+                </div>
+                <div class="bubble you">
+                    I was wondering...
+                </div>
+            </div>
+            <div class="chat" data-chat="person2">
+              <!--<div class="conversation-start">
+                  <span>Today, 6:48 AM</span>
+              </div> -->
+                <div class="bubble you">
+                    Are you there?
+                </div>
+                <div class="bubble you">
+                    How are you doing?
+                </div>
+                <div class="bubble me">
+                    I am good.
+                </div>
+                <div class="bubble me">
+                    What about you?
+                </div>
+                <div class="bubble you">
+                    Well...
+                </div>
+                <div class="bubble you">
+                    I have had a strong fever, just recovered.
+                </div>
+            </div>
+            <div class="chat" data-chat="person3">
+              <!--<div class="conversation-start">
+                  <span>Today, 6:48 AM</span>
+              </div> -->
+                <div class="bubble you">
+                    Hey!
+                </div>
+                <div class="bubble you">
+                    How are you doing?
+                </div>
+                <div class="bubble me">
+                    I am good.
+                </div>
+                <div class="bubble me">
+                    What about you?
+                </div>
+                <div class="bubble you">
+                    Well...
+                </div>
+                <div class="bubble you">
+                    I have had a strong fever, just recovered.
+                </div>
+                <div class="bubble you">
+                    Now back to work!
+                </div>
+            </div>
+            <div class="chat" data-chat="person4">
+                <div class="conversation-start">
+                    <span>Yesterday, 4:20 PM</span>
+                </div>
+                <div class="bubble me">
+                    Hey human!
+                </div>
+                <div class="bubble me">
+                    Umm... Someone took a shit in the hallway.
+                </div>
+                <div class="bubble you">
+                    ... what.
+                </div>
+                <div class="bubble you">
+                    Are you serious?
+                </div>
+                <div class="bubble me">
+                    I mean...
+                </div>
+                <div class="bubble me">
+                    It’s not that bad...
+                </div>
+            </div>
+            <div class="chat" data-chat="person5">
+                <div class="conversation-start">
+                    <span>Today, 6:28 AM</span>
+                </div>
+                <div class="bubble you">
+                    Wasup
+                </div>
+                <div class="bubble you">
+                    Wasup
+                </div>
+                <div class="bubble you">
+                    Wasup for the third time like is <br />you bling bitch
+                </div>
+
+            </div>
+            <div class="chat" data-chat="person6">
+                <div class="conversation-start">
+                    <span>Monday, 1:27 PM</span>
+                </div>
+                <div class="bubble you">
+                    So, how's your new phone?
+                </div>
+                <div class="bubble you">
+                    You finally have a smartphone :D
+                </div>
+                <div class="bubble me">
+                    Drake?
+                </div>
+                <div class="bubble me">
+                    Why aren't you answering?
+                </div>
+                <div class="bubble you">
+                    howdoyoudoaspace
+                </div>
+            </div>
+            <div class="write">
+                <a href="javascript:;" class="write-link attach"></a>
+                <input type="text" />
+                <a href="javascript:;" class="write-link smiley"></a>
+                <a href="javascript:;" class="write-link send"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+
+
+
+
+  </body>
+</html>
